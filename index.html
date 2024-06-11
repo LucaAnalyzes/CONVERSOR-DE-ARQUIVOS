@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de arquivos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class ='Menu'>
+        <h1 class="titulo">Conversor de Arquivos</h1>
+        <button onclick="juntarPDF()" class="buttons">Juntar PDF</button>
+        <button onclick="dividirPDF()" class ="buttons">Dividir PDF</button>
+        <button onclick="converterPDF()" class = 'buttons'>Converter PDF</button>
+    </div>
+    <div class = 'text'>
+        <h2>Este é um projeto feito para desenvolvimento pessoal utilizando HTML + CSS + JS</h2><break>
+        <p> O intuito desse projeto é desenvolver um site para conversor de arquivos PDF para outros formatos. Não sou bom em UX então visualmente não será bonito.</p>
+    </div>
+    <div class = 'janelaFerramentas'>
+        <h2 class = 'tituloFerramenta' id="TituloMudar">Juntar PDF</h2>
+        <div class="Ferramenta" onclick="buscarArquivo()">
+            <input type="file" id ='fileInput' accept=".pdf" onchange="modificador(event)">
+            <h3 class="tituloFerramenta"> Insira aqui seus documentos em PDF</h3>
+            <img class = "imgFerramenta" width="50" height="50" src="https://img.icons8.com/ios/50/archive.png" alt="archive"/>
+            <p>Clique para adicionar o arquivo ou arraste o arquivo!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
